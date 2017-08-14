@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Payment « ADX</title>
+    <link rel="shortcut icon" type="image/png" href="Content/images/favicon.ico" />
+    <script src="lib/jquery.min.js"></script>
+    <link href="Content/assets/css/Styles.css" rel="stylesheet" />
+    <link href="lib/bootstrap.min.css" rel="stylesheet" />
+    <script src="lib/bootstrap.min.js"></script>
+    <link href="Content/assets/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="lib/angular.min.js"></script>
+    <script src="Content/stateList.js"></script>
+    <script src="Content/countryList.js"></script>
+    <script src="Content/app.js"></script>
+</head>
+<body ng-app="app" ng-controller="appCtrl">
+    <div id="cp-container-1">
+        <div id="cp-header" class="aui-group">
+            <div id="cp-file-controls" class="aui-item">
+                <div class="row">
+                    <div class="col-md-12 col-xs-6 col-sm-6 aui-header highlight">
+                        Secure payment gateway
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-md-12 col-sm-3 col-xs-3 aui-header normal" style="font-style: italic; margin-top: -22px; opacity: 0.7; font-size: 13px;">
+                        (Agency name)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 col-xs-6 aui-header normal" style="margin-top: -22px; opacity: 0.7;">
+                        Welcome to the secure payment gateway - please input credit card details below to confirm the travel services booked
+                        through [Agent name]
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12 aui-header normal" style="font-weight: 600;">
+                        If you have any questions, comments or concerns, please reach out to YOUR AGENT prior to processing payment
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="width: 950px; margin-top: 77px;">
+        <div style="page-break-inside: avoid;">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 client-itinerary-agent">
+                    <p class="name">
+                        <span style="text-align: center; float: none !important; color: #2176A5;">
+                            Oceania 12 NIGHT MEDITERRANEAN CRUISE
+                        </span>
+                    </p>
+                    <p class="name">
+                        <span style="text-align: center; float: none !important; font-weight: bold; font-weight: 700; color: #2176A5;">
+                            aDX Ref. 4ZL1TX
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="page-break-inside: avoid;">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-12 client-itinerary-agent" style="margin-top: -40px;">
+                    <p class="name">
+                        <span style="text-align: center; float: none !important; font-weight: bold;">
+                            Invoiced To
+                        </span>
+                    </p>
+                    <p class="name">
+                        <span style="text-align: center; float: none !important; color: #858C8E;">
+                            Dan Volman
+                        </span>
+                    </p>
+                    <p style="color: #858C8E;">
+                        47 Foxley Street
+                        <br />New York, New York
+                        <br>
+                        USA 10078
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row travel-services-list">
+            <div class="col-md-6 col-xs-6">
+                <div class="itinerary-summary-tab">
+                    <div>
+                        <div class="panel panel-default dashboard-travelservice-widget">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <div class="dashboard-title-text ellipsis">
+                                        <b>Services Payable</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body panel-table" style="padding: 0;">
+                                <table class="table table-striped client-itinerary-summary-table">
+
+                                    <tbody>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="fa fa-plane travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">New York (JFK) to Rome (FCO)</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="icon icon-te-cruise travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">Oceania 12 NIGHT MEDITERRANEAN CRUISE</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="fa fa-plane travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">London (LHR) to New York (JFK)</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="icon fa fa-umbrella travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">Travel Protection Plan</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="service-summary-item clearfix" data-travel-service-id="5123340" style="margin-top: -20px;">
+                                    <div class="service-list-title" style="padding-left: 38px;">
+                                        <div class="service-list-amount">
+                                            <label class="de-form-label">PAYABLE AMOUNT</label>
+                                        </div>
+                                    </div>
+                                    <div class="service-list-status text-right" style="color: #858C8E; margin-top: 0px;">
+                                        <label class="de-form-label">
+                                            USD $16,088.36
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-6">
+                <div class="itinerary-summary-tab">
+                    <div>
+                        <div class="panel panel-default dashboard-travelservice-widget">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                    <div class="dashboard-title-text ellipsis">
+                                        <b>Services Requiring Credit Card Gurantee </b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body panel-table" style="padding: 0;">
+                                <table class="table table-striped client-itinerary-summary-table">
+
+                                    <tbody>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="icon icon-te-hotel travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">BAGLIONI Hotel Regina, Rome</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <td class="text-center"><i class="icon icon-te-hotel travel-service-type"></i></td>
+                                            <td>
+                                                <span class="client-itinerary-summary-title">FAIRMONT SAVOY, London</span>
+                                                <span class="text-muted client-itinerary-subtext"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="service-summary-item clearfix" data-travel-service-id="5123340" style="margin-top: -20px;">
+                                    <div class="service-list-title" style="padding-left: 56px;">
+                                        <div class="service-list-amount">
+                                            <label class="de-form-label">GUARANTEE AMOUNT</label>
+                                        </div>
+                                    </div>
+                                    <div class="service-list-status text-right" style="color: #858C8E; margin-top: 0px;">
+                                        <label class="de-form-label">
+                                            EUR €1,243.50
+                                            <br />
+                                            GBP £1,238.80
+                                            <br />
+                                            Card will not be charged
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel panel-default dashboard-widget">
+            <div class="panel-heading">
+                <h2 class="panel-title">
+                    <b class="dashboard-title-text">Payment Details</b>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <section>
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Enter Payment Info">
+                                    <div ng-hide="isFirstScreenDone" class="numberCircle">1</div>
+                                    <div style="display:none;" ng-show="isFirstScreenDone" class="numberCircle active"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                    <span class="wizard-caption">Enter Payment Info</span>
+                                </a>
+
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Confirm & Pay">
+                                    <div ng-hide="isSecondScreenDone" class="numberCircle">2</div>
+                                    <div style="display:none;" ng-show="isSecondScreenDone" class="numberCircle active"><i class="fa fa-check" aria-hidden="true"></i></div>
+                                    <span class="wizard-caption">Confirm & Pay</span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Print/Send Receipt">
+                                    <div class="numberCircle">3</div>
+                                    <span class="wizard-caption">Print/Send Receipt</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="step1">
+                            <div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6">
+
+                                            <div class="form-group payable-amount-group" style="">
+                                                <div class="row">
+                                                    <div class="col-xs-4 col-md-4 text-right">
+                                                    </div>
+                                                    <div class="col-xs-8 col-md-8 text-right">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="credit-card-fields" style="margin-top: 40px;">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4 text-right">
+                                                            <label for="firstName" class="de-form-label">Cardholder Name</label>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <input name="FirstName" ng-model="firstname" id="firstName" class="form-control de-form-control" type="text" placeholder="First Name" value="" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <input name="LastName" ng-model="secondname" class="form-control de-form-control" type="text" placeholder="Last Name" value="" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                        </div>
+                                                        <label class="col-md-8 col-xs-8 col-xs-offset-4 col-md-offset-4 appears-on-card-blurb">AS IT APPEARS ON THE CARD</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4 text-right">
+                                                            <label for="creditCardNumber" class="de-form-label">Credit Card Number</label>
+                                                        </div>
+                                                        <div class="col-md-8 col-xs-8">
+                                                            <input name="CreditCardNumber" ng-model="cardnumber" id="creditCardNumber" type="text" class="form-control de-form-control input-card-number" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top" data-validate-creditcardtype-netrate="" data-validate-creditcardtype-commission="" data-validate-creditcardnumber="true" data-validation-group="cruise-payment-creditcard">
+                                                            <span class="card-thumbnail" style="position: absolute; top: 1px; right: 15px;"><i class="icon-credit-card"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4 text-right">
+                                                            <label for="month" class="de-form-label">Expiry</label>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <span class="expiry-validation" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                                <select name="Month" ng-model="month" id="month" class="form-control de-form-control" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                                    <option value="">Month</option>
+                                                                    <option value="1">01</option>
+                                                                    <option value="2">02</option>
+                                                                    <option value="3">03</option>
+                                                                    <option value="4">04</option>
+                                                                    <option value="5">05</option>
+                                                                    <option value="6">06</option>
+                                                                    <option value="7">07</option>
+                                                                    <option value="8">08</option>
+                                                                    <option value="9">09</option>
+                                                                    <option value="10">10</option>
+                                                                    <option value="11">11</option>
+                                                                    <option value="12">12</option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <span class="expiry-validation" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                                <select ng-model="year" name="Year" class="form-control de-form-control year-options" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                                    <option value="">Year</option>
+                                                                    <option value="2017">17</option>
+                                                                    <option value="2018">18</option>
+                                                                    <option value="2019">19</option>
+                                                                    <option value="2020">20</option>
+                                                                    <option value="2021">21</option>
+                                                                    <option value="2022">22</option>
+                                                                    <option value="2023">23</option>
+                                                                    <option value="2024">24</option>
+                                                                    <option value="2025">25</option>
+                                                                    <option value="2026">26</option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-xs-4 text-right">
+                                                            <label for="verificationCode" class="de-form-label">Verification Number</label>
+                                                        </div>
+                                                        <div class="col-md-3 col-xs-3">
+                                                            <input ng-model="verificationcode" name="VerificationCode" id="verificationCode" class="form-control de-form-control" type="text" value="" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-6 col-md-6">
+
+                                            <div class="credit-card-fields">
+                                                <div class="form-group client-billing-address-wrapper">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-xs-12 text-right">
+                                                            <label><input class="check-billing-address" type="checkbox"> USE CLIENT BILLING ADDRESS</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="address-form">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="address1" class="de-form-label">Address</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <input name="Address1" ng-model="address1" id="address1" type="text" class="form-control de-form-control billing-address-address1" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-xs-8 col-md-offset-4 col-xs-offset-4">
+                                                                <input name="Address2" ng-model="address2" type="text" class="form-control de-form-control billing-address-address2" placeholder="Optional">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="city" class="de-form-label">City</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <input ng-model="city" name="City" id="city" type="text" class="form-control de-form-control billing-address-city" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="top">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="country" class="de-form-label">Country</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <select ng-model="selectedCountry" ng-change="GetStates()" name="Country" id="country" class="form-control de-form-control country billing-address-country">
+                                                                    <option value=''>Not Specified</option>
+                                                                    <option ng-repeat='country in Countries' value='{{country.CountryId}}'>{{country.CountryName}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="stateProvince" class="de-form-label">State/Province</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <select ng-model="selectedstate" ng-change="SetStateSelection()" name="StateProvince" id="stateProvince" class="form-control de-form-control state-province billing-address-subdivision disable">
+                                                                    <option value=''>Please Select</option>
+                                                                    <option ng-repeat='state in SelectedStates' value='{{state.SubdivisionId}}'>{{state.SubdivisionName}}</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="zipPostalCode" class="de-form-label">Zip/Postal Code</label>
+                                                            </div>
+                                                            <div class="col-md-3 col-xs-3">
+                                                                <input ng-model="zip" name="ZipPostalCode" id="zipPostalCode" type="text" class="form-control de-form-control billing-address-zip" data-validate-required="true" data-validate-use-tooltip="true" data-validate-tooltip-placement="right">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-top: 33px;">
+                                        <div class="col-md-4 col-xs-4">
+                                            <img style="width: 150px; margin-top: 0px;" src="content/images/secure-paypal-logo.jpg" alt="paypal-secure-payment" />
+                                        </div>
+                                        <div class="col-md-8 col-xs-8 text-right">
+                                            <button style="background-color: #29AAE1;" ng-click="gotoNext('1')" class="btn btn-primary btn-medium make-payment pay-and-ticket next-step" id="payAndTicket" title="Pay and Ticket will automatically submit all paid air bookings for ticketing.">Go to Confirmation Page >></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                            <div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-6">
+
+                                            <div class="credit-card-preview" style="border-right: 1px solid #ddd;">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-xs-8 text-right">
+                                                            <label for="firstName" class="de-form-label">Name On the Card</label>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <label>{{firstname}} {{lastname}}</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-xs-8 text-right">
+                                                            <label for="creditCardNumber" class="de-form-label">Card</label>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <label>XXXX-XXXX-XXXX-{{cardnumber[8]}}{{cardnumber[9]}}{{cardnumber[10]}}{{cardnumber[11]}}</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-xs-8 text-right">
+                                                            <label for="month" class="de-form-label">Expiry</label>
+                                                        </div>
+                                                        <div class="col-md-4 col-xs-4">
+                                                            <label>{{month}}/{{year}}</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-8 col-xs-8 text-right">
+                                                            <label for="verificationCode" class="de-form-label">Code</label>
+                                                        </div>
+                                                        <div class="col-md-3 col-xs-3">
+                                                            <label>{{verificationcode}}</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-6 col-md-6">
+
+                                            <div class="client-address-preview">
+
+                                                <div class="address-form">
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                                <label for="address1" class="de-form-label">Address</label>
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <label name="address1Preview" id="address1Preview">{{address1}}</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-8 col-xs-8 col-md-offset-4 col-xs-offset-4">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <label name="address1Preview">{{city}}</label>
+                                                                <label ng-show="city && SelectedStateDetail.SubdivisionName">,</label>
+                                                                <label>{{SelectedStateDetail.SubdivisionName}}</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-xs-4 text-right">
+                                                            </div>
+                                                            <div class="col-md-8 col-xs-8">
+                                                                <label name="address1Preview">{{SelectedCountryDetail.Country3CharCode}} {{zip}}</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <div class="col-md-12 col-xs-12">
+                                            <div class="credit-card-toc">
+                                                <span class="de-form-label">Terms &amp; Conditions</span>
+                                                <p class="credit-card-toc-desc">
+                                                    The Payment Details section above requires that you collect and enter your client’s
+                                                    confidential and personal information, including the client’s residential address,
+                                                    credit card number, expiration date and verification number. You acknowledge and
+                                                    agree that you have obtained the consent of your client to collect and enter this
+                                                    information for the sole purpose of booking the product or service above, and that
+                                                    you will not use this information for any other purpose. Once you enter the information
+                                                    above, you will not store or retain the information. You are solely responsible for
+                                                    verifying that your client is providing you with your client’s credit card information
+                                                    and not credit card information that the client is not authorized to use.
+                                                </p>
+                                            </div>
+                                            <div class="credit-card-toc guarantee-payments-warning" style="display: none;">
+                                                <span class="de-form-label">Important Note about Guarantee Hotel Payments</span>
+                                                <p class="credit-card-toc-desc">
+                                                    It is extremely important that the credit card you use to guarantee payment is a valid one.
+                                                    An invalid credit card may result in the cancellation of the hotel reservation without any
+                                                    notification in aDX.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-4 col-xs-4">
+                                            <img style="width: 150px; margin-top: 0px;" src="content/images/secure-paypal-logo.jpg" alt="paypal-secure-payment" />
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 text-right">
+                                            <label style="margin-right: 10px;"><input ng-model="tcConfirmed" type="checkbox" class="accept-toc-checkbox" style="position: relative; top: 2px;"> I have read the terms and conditions</label>
+                                            <button ng-click="gotoNext('2')" style="background-color: #29AAE1;" class="btn btn-primary make-payment pay-and-ticket next-step" id="payAndTicket" ng-disabled="!tcConfirmed" title="Pay and Ticket will automatically submit all paid air bookings for ticketing.">Complete Payment</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step3">
+
+                            <div class="client-itinerary-bordered-well">
+                                <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <p class="text-center" style="margin: 0px;">
+                                            <strong class="text-center">Confirmed</strong>
+                                        </p>
+                                        <p class="text-center" style="margin: 0px;">Your Credit Card has been processed</p>
+                                        <p class="text-center" style="margin: 0px;">PayPal confirmation #92930484</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px; margin-bottom: 25px; margin-left: 130px;">
+                                <div class="col-md-10 col-xs-10 text-center">
+                                    <button style="background-color: #29AAE1;" class="btn btn-primary btn-medium make-payment pay-and-ticket next-step"><i class="fa fa-print" aria-hidden="true"></i> Print Confirmation</button>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-left: 200px; margin-left: 110px;">
+                                <div class="col-md-4 col-md-offset-2 col-sm-6">
+                                    <div class="form-group margin-bottom">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-4">
+                                    <button style="background-color: #29AAE1;" class="btn btn-primary btn-block margin-bottom-lg">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i> Send Email
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-left: 200px; margin-left: 110px;">
+                                <div class="col-md-4 col-md-offset-2 col-sm-6 pull-left">
+                                    <div class="form-group margin-bottom" style="color: #29AAE1;">
+                                        <i class="fa fa-plus" aria-hidden="true"></i> <a style="color: #29AAE1;" href="#">Add Email</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

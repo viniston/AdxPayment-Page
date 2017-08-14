@@ -1,0 +1,743 @@
+﻿
+/* Core */
+/* --Open Sans Normal-- */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/Content/assets/fonts/open-sans/OpenSans.eot');
+    src: url('/Content/assets/fonts/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans/OpenSans.woff') format('woff'), url('/Content/assets/fonts/open-sans/OpenSans.ttf') format('truetype'), url('/Content/assets/fonts/open-sans/OpenSans.svg') format('svg');
+}
+/* --Open Sans Bold-- */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/Content/assets/fonts/open-sans/OpenSans-Bold.eot');
+    src: url('/Content/assets/fonts/open-sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans/OpenSans-Bold.woff') format('woff'), url('/Content/assets/fonts/open-sans/OpenSans-Bold.ttf') format('truetype'), url('/Content/assets/fonts/open-sans/OpenSans-Bold.svg') format('svg');
+}
+/* --Open Sans Italic-- */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/Content/assets/fonts/open-sans/OpenSans-Italic.eot');
+    src: url('/Content/assets/fonts/open-sans/OpenSans-Italic.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans/OpenSans-Italic.woff') format('woff'), url('/Content/assets/fonts/open-sans/OpenSans-Italic.ttf') format('truetype'), url('/Content/assets/fonts/open-sans/OpenSans-Italic.svg') format('svg');
+}
+/* --Open Sans Bold Italic-- */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/Content/assets/fonts/open-sans/OpenSans-BoldItalic.eot');
+    src: url('/Content/assets/fonts/open-sans/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans/OpenSans-BoldItalic.woff') format('woff'), url('/Content/assets/fonts/open-sans/OpenSans-BoldItalic.ttf') format('truetype'), url('/Content/assets/fonts/open-sans/OpenSans-BoldItalic.svg') format('svg');
+}
+/* --Open Sans Condensed Normal (Light)-- */
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed.eot');
+    src: url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed.woff') format('woff'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed.ttf') format('truetype'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed.svg') format('svg');
+}
+/* --Open Sans Condensed Bold-- */
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed-Bold.eot');
+    src: url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed-Bold.eot?#iefix') format('embedded-opentype'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed-Bold.woff') format('woff'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed-Bold.ttf') format('truetype'), url('/Content/assets/fonts/open-sans-condensed/OpenSans-Condensed-Bold.svg') format('svg');
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    padding-top: 60px;
+    color: #4D4D4D;
+    background-color: #F8F9F9;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Buttons */
+.btn {
+    padding: 5px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    text-transform: none;
+    height: 30px;
+}
+
+.pay-and-ticket {
+    margin-left: 7px;
+}
+
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #29ABE2;
+    border: 1px solid #29ABE2;
+}
+
+.btn-default {
+    color: #29ABE2;
+    background-color: #FFFFFF;
+    border: 1px solid #29ABE2;
+}
+
+
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active,
+    .open .dropdown-toggle.btn-primary {
+        color: #FFFFFF;
+        background-color: #2176A5;
+        border: 1px solid #2176A5;
+    }
+
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active {
+        border: 1px solid #2176A5;
+    }
+
+.btn-admin:hover,
+.btn-admin:focus,
+.btn-admin:active,
+.btn-admin.active {
+    color: #FFFFFF;
+    background-color: #532e96;
+    border: 1px solid #532e96;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #29ABE2;
+    border: 1px solid #29ABE2;
+}
+
+.btn-admin.disabled,
+.btn-admin[disabled],
+fieldset[disabled] .btn-admin,
+.btn-admin.disabled:hover,
+.btn-admin[disabled]:hover,
+fieldset[disabled] .btn-admin:hover,
+.btn-admin.disabled:focus,
+.btn-admin[disabled]:focus,
+fieldset[disabled] .btn-admin:focus,
+.btn-admin.disabled:active,
+.btn-admin[disabled]:active,
+fieldset[disabled] .btn-admint:active,
+.btn-admin.disabled.active,
+.btn-admin[disabled].active,
+fieldset[disabled] .btn-admin.active {
+    color: #FFFFFF;
+    background-color: #9f7ae3;
+    border: 1px solid #9f7ae3;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    background-color: #FFFFFF;
+    border: 1px solid #AFB8BD;
+}
+
+
+.dashboard-widget.panel-default {
+    margin-left: -17px;
+    margin-right: -16px;
+}
+
+.panel {
+    margin-bottom: -40px;
+}
+
+.panel-title .btn {
+    margin-top: -4px;
+}
+
+.input-group-btn .btn {
+    padding: 3px 10px;
+}
+
+
+.nav-tabs > li > a {
+    border: 1px solid transparent !important;
+}
+
+/*.nav-tabs > li.active > a {
+    background-color: #F8F9F9 !important;
+}*/
+
+.wizard {
+    margin: 20px auto;
+    /*background: #fff;*/
+}
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: -30px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+    span.round-tab i {
+        color: #555555;
+    }
+
+.wizard li.active span.round-tab {
+    background: #fff;
+}
+
+    .wizard li.active span.round-tab i {
+        color: #5bc0de;
+    }
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 33.33%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #999;
+    transition: 0.1s ease-in-out;
+    border-bottom: 1px solid;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 2px solid;
+    border-bottom-color: #32557F;
+    width: 100%;
+    left: 0px;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    /*height: 70px;*/
+    height: 50px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 20px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+.wizard-caption {
+    width: 120px;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: -25px;
+    vertical-align: bottom;
+    padding-top: 12px;
+    color: #92999B;
+    font-weight: bold;
+}
+
+.wizard li.active .wizard-caption {
+    color: #32557F;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 24px;
+    height: 24px;
+    padding: -4px;
+    background: #fff;
+    border: 1px solid #32557F;
+    color: #4c6B8F;
+    text-align: center;
+    font: 17px Arial, sans-serif;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 1px;
+}
+
+    .numberCircle.active {
+        color: #fff;
+        background-color: #47a447;
+        border-color: #398439;
+    }
+
+.wizard li.active .numberCircle {
+    background: #32557F;
+    color: #fff;
+    border: 2px solid #32557F;
+}
+
+label, .de-label, .form-horizontal .control-label .de-form-label {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #858C8E;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+
+.label-billing-address, .appears-on-card-blurb, .guarantee-amount-remark {
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.dashboard-widget.panel-default > .panel-heading {
+    color: #FFFFFF;
+    background-color: #AFB8BD;
+}
+
+.dashboard-widget .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+}
+
+.dashboard-travelservice-widget.panel-default > .panel-heading {
+    color: #FFFFFF;
+    background-color: #AFB8BD;
+}
+
+.dashboard-travelservice-widget .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+}
+
+.dashboard-travelservice-widget.panel-default {
+    border: 0;
+}
+
+
+@media (max-width: 585px) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+*[id^='cp-container-'] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+}
+
+#cp-header {
+    background-color: #32557F;
+}
+
+.aui-group:first-child {
+    margin-top: 0;
+}
+
+.aui-group {
+    margin: 10px 0 0 0;
+}
+
+.aui-group {
+    display: table;
+    box-sizing: border-box;
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.aui-header {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    margin: 15px 0 20px;
+}
+
+    .aui-header.highlight {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .aui-header.normal {
+        font-size: 12px;
+        white-space: nowrap;
+        text-align: center;
+        margin: -20px 0 20px;
+    }
+
+.client-itinerary-agent {
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+    .client-itinerary-agent p {
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+
+.itinerary-service-list {
+    margin: 0;
+    padding: 0;
+}
+
+.service-list-icon {
+    padding-top: 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #AFB8BD;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 24px;
+    float: left;
+}
+
+.panel-default {
+    border-color: #CAD3D8;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+div.service-list-icon, div.service-list-external-icon, div.service-list-title {
+    display: inline-block;
+}
+
+.service-list-title {
+    /*float: left;*/
+    margin-left: 8px;
+}
+
+.service-summary-item {
+    padding: 5px;
+}
+
+.service-list-amount {
+    color: #858C8E;
+    font-size: 12px;
+}
+
+.service-list-status {
+    float: right;
+    margin-top: 15px;
+}
+
+.label-status.label-ticketable {
+    background-color: #822678;
+}
+
+.label-status {
+    font-family: "Open Sans Condensed", "Helvetica Neue Condensed", Arial Condensed, sans-serif-condensed;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 0 3px;
+    line-height: 18px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    min-width: 56px;
+    display: inline-block;
+    height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.itinerary-service-item:last-child {
+    border-bottom: none;
+}
+
+.itinerary-service-item {
+    list-style-type: none;
+    border-bottom: 0px solid #AFB8BD;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.travel-services-list {
+    margin-top: 20px;
+}
+
+
+/*
+ * Custom glyphs and iconography.
+ */
+
+@font-face {
+    font-family: 'TE-Travel';
+    src: url('/Content/font/TE-Travel.eot?-gthnw1');
+    src: url('/Content/font/TE-Travel.eot?#iefix-gthnw1') format('embedded-opentype'), url('/Content/font/TE-Travel.ttf?-gthnw1') format('truetype'), url('/Content/font/TE-Travel.woff?-gthnw1') format('woff'), url('/Content/font/TE-Travel.svg?-gthnw1#TE-Travel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[class^="icon-te"].fa, [class*="icon-te"].fa, [class^="icon-te"], [class*="icon-te"] {
+    font-family: 'TE-Travel';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-te-combinable:before {
+    content: "\e60f";
+}
+
+.icon-te-adx:before {
+    content: "\e600";
+}
+
+.icon-te-voyager-club:before {
+    content: "\e601";
+}
+
+.icon-te-user:before {
+    content: "\e602";
+}
+
+.icon-te-unarchive:before {
+    content: "\e603";
+}
+
+.icon-te-tour:before {
+    content: "\e604";
+}
+
+.icon-te-service:before {
+    content: "\e606";
+}
+
+.icon-te-sea:before {
+    content: "\e607";
+}
+
+.icon-te-limo:before {
+    content: "\e608";
+}
+
+.icon-te-insurance:before {
+    content: "\e609";
+}
+
+.icon-te-hotel:before {
+    content: "\e60a";
+}
+
+.icon-te-diamond:before {
+    content: "\e60b";
+}
+
+.icon-te-cruise:before {
+    content: "\e60c";
+}
+
+.icon-te-car:before {
+    content: "\e60d";
+}
+
+.icon-te-amenities:before {
+    content: "\e60e";
+}
+
+.table.client-itinerary-summary-table tbody tr:nth-child(odd) td {
+    background-color: transparent;
+}
+
+.table.client-itinerary-summary-table tbody tr > td {
+    border: 0;
+}
+
+.travel-service-type {
+    color: #2176A5;
+}
+
+.client-itinerary-summary-title {
+    font-weight: 600;
+    font-size: 13px;
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.credit-card-preview .form-group {
+    margin-bottom: 0px;
+}
+
+.credit-card-preview label {
+    margin-bottom: 0px;
+}
+
+
+.credit-card-preview .row {
+    margin-right: 100px;
+}
+
+.client-address-preview .form-group {
+    margin-bottom: 0px;
+}
+
+.client-address-preview label {
+    margin-bottom: 0px;
+}
+
+
+.box {
+    background: black;
+    width: 500px;
+    padding: 40px;
+    border: 10px solid white;
+    color: white;
+    margin-left: 230px;
+}
+
+.client-itinerary-bordered-well {
+    border: 2px solid #2176A5;
+    page-break-inside: avoid;
+    width: 50%;
+    margin-left: 230px;
+    color: #2176A5;
+}
